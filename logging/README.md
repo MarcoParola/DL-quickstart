@@ -21,6 +21,9 @@ Graph Visualization: Visualize the computational graph of your model, aiding in 
 
 Histograms and Distributions: Explore the distribution of weights, biases, and activations throughout the network layers.
 
+In order to visualize logs of an experiments is necessary to run a tensorboard server and to specify in the option "--logdir" the folder in which log data are saved: 
+python -m tensorboard.main --logdir=logs
+
 Weights & Biases (WandB):
 Weights & Biases, often abbreviated as WandB, is a collaborative platform for machine learning experiments. It provides logging, visualization, and experiment tracking functionalities, enabling seamless collaboration and reproducibility across teams. Key features of WandB include:
 
@@ -31,3 +34,10 @@ Visualization: Visualize training metrics, model performance, and system resourc
 Artifact Management: Store and version control model checkpoints, datasets, and other experiment artifacts for easy retrieval and sharing.
 
 By integrating WandB into your training pipeline, you can leverage its collaborative features to streamline experimentation and share insights with your team.
+
+To exploit wandb you have to create a new project on [Weights & Biases](https://wandb.ai/site).  
+Log in 
+```sh
+wandb login 
+```
+and paste your API key when prompted.
