@@ -67,6 +67,7 @@ Log in
 wandb login 
 ```
 and paste your API key when prompted.
+
 import libraries
 ```sh
 from pytorch_lightning.loggers import WandbLogger
