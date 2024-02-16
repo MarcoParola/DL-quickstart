@@ -25,7 +25,7 @@ git clone <repository-url>
 - Commit:
   - Add changes to commit
   ```sh
-  git add .
+  git add <file-path>
   ```
 
   - Commit changes:
