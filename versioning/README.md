@@ -1,6 +1,7 @@
 # Versioning
 Versioning is essential for tracking changes and facilitating collaboration in software development, providing a stable framework for managing project evolution and enabling easy reverting of modifications when needed.
 
+## Quick start
 - Clone project:
 ```sh
 git clone <repository-url>
@@ -47,3 +48,5 @@ git push origin <branch-name>
   ```sh
   git push origin --delete <branch-name>
   ```
+## Official giude:
+[https://git-scm.com/docs](https://git-scm.com/docs)
