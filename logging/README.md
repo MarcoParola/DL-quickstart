@@ -22,7 +22,7 @@ TensorBoard, developed by TensorFlow, is a powerful visualization tool designed 
 
 # **How to use Tensorboard**
 import in your project
-```code
+```sh
 from pytorch_lightning.loggers import TensorBoardLogger
 ```
 instantiate the logger 
@@ -33,6 +33,15 @@ instantiate the writer
 ```sh
 writer = SummaryWriter(log_dir=log_dir)
 ```
+log some value
+```sh
+writer.add_scalar('Accuracy', accuracy_score)
+```
+log some figure
+```sh
+writer.add_figure("Confusion matrix", img)```
+
+
 In order to visualize logs of an experiments is necessary to run a tensorboard server and to specify in the option "--logdir" the folder in which log data are saved: 
 ```sh
 python -m tensorboard.main --logdir=log_path
@@ -50,10 +59,26 @@ Weights & Biases, often abbreviated as WandB, is a collaborative platform for ma
 **Artifact Management**: Store and version control model checkpoints, datasets, and other experiment artifacts for easy retrieval and sharing.
 
 By integrating WandB into your training pipeline, you can leverage its collaborative features to streamline experimentation and share insights with your team.
-
+# **How to use Wandb**
 To exploit wandb you have to create a new project on [Weights & Biases](https://wandb.ai/site).  
 Log in 
 ```sh
 wandb login 
 ```
 and paste your API key when prompted.
+import libraries
+```sh
+from pytorch_lightning.loggers import WandbLogger
+import wandb
+```
+instantiate the logger 
+```sh
+wandb.init(entity=wandb_entity, project=wandb_project)
+wandb.config.update(hyperparameters)
+wandb_logger = WandbLogger()
+```
+PyTorch Lightning will automatically log various metrics to WandB. You don't need to explicitly log values using wandb.log() within your training loop.
+PyTorch Lightning will automatically log metrics such as loss, validation metrics, and any additional metrics you specify using the log() method within your LightningModule's training_step or validation_step methods.
+
+If you are using both Tensorboard and Wandb append all the loggers in a loggers list, this list will be passed when the trainer is instantiated
+
