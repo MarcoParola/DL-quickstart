@@ -22,14 +22,17 @@ TensorBoard, developed by TensorFlow, is a powerful visualization tool designed 
 
 # **How to use Tensorboard**
 import in your project
-```sh
+```code
 from pytorch_lightning.loggers import TensorBoardLogger
 ```
 instantiate the logger 
 ```sh
 tensorboard_logger = TensorBoardLogger(log_path, name="name")
 ```
-
+instantiate the writer
+```sh
+writer = SummaryWriter(log_dir=log_dir)
+```
 In order to visualize logs of an experiments is necessary to run a tensorboard server and to specify in the option "--logdir" the folder in which log data are saved: 
 ```sh
 python -m tensorboard.main --logdir=log_path
