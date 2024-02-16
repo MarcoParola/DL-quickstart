@@ -39,7 +39,8 @@ writer.add_scalar('Accuracy', accuracy_score)
 ```
 log some figure
 ```sh
-writer.add_figure("Confusion matrix", img)```
+writer.add_figure("Confusion matrix", img)
+```
 
 
 In order to visualize logs of an experiments is necessary to run a tensorboard server and to specify in the option "--logdir" the folder in which log data are saved: 
