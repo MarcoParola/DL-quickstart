@@ -16,6 +16,7 @@ Versioning is a crucial aspect of any software development project, including de
 
 **Documentation**: Document significant changes, decisions, and dependencies in a README.md file within your repository. This provides context for collaborators and helps newcomers understand the project structure and requirements.
 
-**Branching Strategy**: Define a branching strategy that suits your project's workflow, one of the strategies is to keep a "main" branch and many "develop" branch.
+#**Branching Strategy**
+One of the strategies is to keep a "main" branch and many "develop" branch.
 each developer works on his develop branch to new features for the global project. When something new on the develop branch is finished it is merged into the main branch.
 The main branch has to remain clean, all the code in the main branch has to be commented and has to be tested, the main branch has to be a working version of the project.
