@@ -20,10 +20,22 @@ TensorBoard, developed by TensorFlow, is a powerful visualization tool designed 
 
 **Histograms and Distributions**: Explore the distribution of weights, biases, and activations throughout the network layers.
 
+# **How to use Tensorboard**
+import in your project
+```sh
+from pytorch_lightning.loggers import TensorBoardLogger
+```
+instantiate the logger 
+```sh
+tensorboard_logger = TensorBoardLogger(log_path, name="name")
+```
+
 In order to visualize logs of an experiments is necessary to run a tensorboard server and to specify in the option "--logdir" the folder in which log data are saved: 
 ```sh
-python -m tensorboard.main --logdir=logs
+python -m tensorboard.main --logdir=log_path
 ```
+
+open http://localhost:6006/ to visualize the page of Tensorboard running on the server just created
 
 # **Weights & Biases (WandB)**:
 Weights & Biases, often abbreviated as WandB, is a collaborative platform for machine learning experiments. It provides logging, visualization, and experiment tracking functionalities, enabling seamless collaboration and reproducibility across teams. Key features of WandB include:
