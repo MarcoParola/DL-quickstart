@@ -26,7 +26,7 @@ if __name__ == "__main__":
 Note:
 - you can not use more than one configuration into a python file
 - you should omit the .yaml extension
-- 
+ 
 ```sh
 $ python my_app.py db.user=root db.pass=1234
 ```
