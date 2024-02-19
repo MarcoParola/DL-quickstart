@@ -1,7 +1,7 @@
 ## **Versioning**
 Versioning is a crucial aspect of any software development project, including deep learning. It helps in keeping track of changes, managing codebase evolution, and facilitating collaboration among team members. In this section, we'll discuss the importance of versioning and how to implement it effectively in your deep learning project, especially focusing on Git, a widely used version control system.
 
-# **Versioning**
+# **Advantaages of Versioning**
 
 **Tracking Changes**: Deep learning projects involve multiple iterations and modifications to code, data, and model architectures. Versioning enables you to track these changes over time, providing a clear history of the project's evolution.
 
