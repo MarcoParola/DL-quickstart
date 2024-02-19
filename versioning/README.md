@@ -20,3 +20,54 @@ Versioning is a crucial aspect of any software development project, including de
 One of the strategies is to keep a "main" branch and many "develop" branch.
 each developer works on his develop branch to new features for the global project. When something new on the develop branch is finished it is merged into the main branch.
 The main branch has to remain clean, all the code in the main branch has to be commented and has to be tested, the main branch has to be a working version of the project.
+
+
+## Quick start
+- Clone project:
+```sh
+git clone <repository-url>
+```
+
+- Branch handling:
+  - Create a New Branch:
+  ```sh
+  git checkout -b <branch-name>
+  ```
+
+  - Change branch if already created:
+  ```sh
+  git checkout -b <branch-name>
+  ```
+
+  - See all branches:
+  ```sh
+  git branch -a
+  ```
+
+- Commit:
+  - Add changes to commit
+  ```sh
+  git add <file-path>
+  ```
+
+  - Commit changes:
+  ```sh
+  git commit -m "Implemented feature X"
+  ```
+
+- Push your branch: 
+```sh
+git push origin <branch-name>
+```
+
+- Delete a branch:
+  - locally:
+  ```sh
+  git branch -d <branch-name>
+  ```
+  - on GitHub:
+  ```sh
+  git push origin --delete <branch-name>
+  ```
+## Official giude:
+[https://git-scm.com/docs](https://git-scm.com/docs)
