@@ -1,15 +1,33 @@
 # Virtual environment
 
-Virtual environments are useful because they provide isolated environments for Python projects, preventing conflicts between dependencies. They allow for project-specific package installations, enabling clean and reproducible development environments. Additionally, virtual environments facilitate dependency management, making it easier to share projects without worrying about conflicting dependencies.
 
-Create a virtual enviroment:
+
+Virtual environments are an important component of Python project. They provide an isolated, self-contained environment in which project-specific libraries can be installed without affecting the system-wide installation of Python. This ensures that different projects can have their own dependencies, versions and configurations, avoiding potential conflicts. 
+
+## venv
+
+`venv` is a module built into Python 3 that allows you to create lightweight virtual environments effortlessly. To create a virtual environment using venv, navigate to your project directory in the terminal and run the following commands:
+
 ```sh
-python -m venv /path/to/new/virtual/environment
+python3 -m venv env
 ```
 
-Activate virtual environment:
+This creates a virtual environment named `env` in your project directory. Activate the virtual environment using:
+
+On Windows:
 ```sh
-source <venv>/bin/activate
+.\venv\Scripts\activate
+```
+
+On macOS/Linux:
+```sh
+source venv/bin/activate
+```
+
+Once activated, the terminal prompt will change, indicating that you are now working within the virtual environment.  To deactivate the virtual environment, simply type deactivate in the terminal. 
+
+```sh
+deactivate
 ```
 
 A requirements.txt file is a common convention in Python projects used to specify the dependencies required for the project to run. It contains a list of Python packages along with their version numbers. This file is used by package management tools (pip) to install the necessary dependencies for the project.
@@ -36,8 +54,7 @@ Remove virtual environment:
 rm -rf venv/
 ```
 
-### Official Guide:
-[https://docs.python.org/3/library/venv.html](https://docs.python.org/3/library/venv.html)
+The official guide can be found [here](https://docs.python.org/3/library/venv.html)
 
 ## Conda
 
@@ -96,7 +113,5 @@ Remove virtual environment:
 conda remove --name envname --all
 ```
 
-# Official guides:
-[https://docs.python.org/3/library/venv.html](https://docs.python.org/3/library/venv.html)
 
-[https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
+The official guide can be found [here](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
