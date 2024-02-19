@@ -22,6 +22,10 @@ each developer works on his develop branch to new features for the global projec
 The main branch has to remain clean, all the code in the main branch has to be commented and has to be tested, the main branch has to be a working version of the project.
 
 
+=======
+# Versioning
+Versioning is essential for tracking changes and facilitating collaboration in software development, providing a stable framework for managing project evolution and enabling easy reverting of modifications when needed.
+
 ## Quick start
 - Clone project:
 ```sh
