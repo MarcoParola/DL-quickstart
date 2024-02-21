@@ -1,10 +1,16 @@
-# Virtual environment
+# Packages and Virtual environment
 
 
 
-Virtual environments are an important component of Python project. They provide an isolated, self-contained environment in which project-specific libraries can be installed without affecting the system-wide installation of Python. This ensures that different projects can have their own dependencies, versions and configurations, avoiding potential conflicts. 
+Virtual environments are an important component of Python project. They provide an isolated, self-contained environment in which project-specific libraries can be installed without affecting the system-wide installation of Python. This ensures that different projects can have their own packages, dependencies, versions and configurations, avoiding potential conflicts. 
+
+Such packages and dependencies can be installed using a package installer called `pip`, which will be presented below. Thus, thanks to these components it is possible to create a project with specific packages/libraries and isolate them from the rest of the system.
+
+
 
 ## venv
+
+
 
 `venv` is a module built into Python 3 that allows you to create lightweight virtual environments effortlessly. To create a virtual environment using venv, navigate to your project directory in the terminal and run the following commands:
 
@@ -24,22 +30,55 @@ On macOS/Linux:
 source venv/bin/activate
 ```
 
-Once activated, the terminal prompt will change, indicating that you are now working within the virtual environment.  To deactivate the virtual environment, simply type deactivate in the terminal. 
+Once activated, the terminal prompt will change, indicating that you are now working within the virtual environment.  When you finish working on the current project or need to run a different project, remember to deactivate the virtual environment by simply typing deactivate in the terminal.
 
 ```sh
 deactivate
 ```
 
+
+## Pip
+
+Once the virtual environment is activated, the libraries needed for the project must be installed via the `pip` package installer.
+Please note: such libraries work only when the virtual environment is activated.
+`pip` is the default package installer for Python. It manages Python packages and dependencies from PyPI. PyPI is a repository of software packages developed and maintained by the Python community. pip interacts with PyPI to download and install packages. 
+
+Installing a Package:
+```sh
+pip install package_name
+```
+
+Uninstalling a Package:
+```sh
+pip uninstall package_name
+```
+
+### Freezing
+
+If we need to run the project on a machine other than the current one, it is important to export the used package information so that we can reinstall and reset everything on a new machine. In this regard, we can freeze the environment. 
+
+Freezing an environment means recording the specific versions of software libraries and dependencies used in a project. This ensures that the project can be recreated at any time in the future with the exact same configuration, minimizing the risk of compatibility issues.
+When multiple developers or teams work on a project, they must have a consistent development environment. Freezing the environment allows everyone to work with the same set of dependencies, reducing the possibility of errors or discrepancies between different configurations.
+
+Freeze the environment at the end of the coding session, in case new dependencies have been installed, and put in `requirements.txt`.
+
+
+```sh
+pip freeze > requirements.txt
+```
+
 A requirements.txt file is a common convention in Python projects used to specify the dependencies required for the project to run. It contains a list of Python packages along with their version numbers. This file is used by package management tools (pip) to install the necessary dependencies for the project.
 
-requirements.txt
+
 ```sh
+# requirements.txt
 numpy==1.21.3
 pandas==1.3.4
 matplotlib==3.4.3
 ```
 
-Once activated the virtual environment:
+To reconfigure the same environment in the new machine, after create a new virtual environment with `venv`, installs packages listed in a requirements file.
+
 ```sh
 pip install -r requirements.txt
 ```
