@@ -4,7 +4,7 @@ This section provides a brief guide to the structure and guidelines for writing 
 > **_NOTE:_** the document must be written in English
 
 ## **Document Structure**
-The thesis document should follow a clear structure as follows:
+The thesis document should follow a clear structure:
 
 1. **Abstract**
    - the one established with the supervisors and communicated when the thesis has been activated
