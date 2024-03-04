@@ -11,6 +11,7 @@ Welcome to the Deep Learning quick start guide! This document is created by form
 4. [Deep learning frameworks](frameworks/README.md)
 5. [Configuration](config/README.md)
 6. [Logging](logging/README.md)
+7. [Thesis document writing](thesis-doc/README.md)
 
 
 

@@ -41,7 +41,7 @@ deactivate
 
 Once the virtual environment is activated, the libraries needed for the project must be installed via the `pip` package installer.
 Please note: such libraries work only when the virtual environment is activated.
-`pip` is the default package installer for Python. It manages Python packages and dependencies from PyPI. PyPI is a repository of software packages developed and maintained by the Python community. pip interacts with PyPI to download and install packages. 
+`pip` is the default package installer for Python. It manages Python packages and dependencies from PyPI. PyPI is a repository of software packages developed and maintained by the Python community. `pip` interacts with PyPI to download and install packages. 
 
 Installing a Package:
 ```sh
@@ -67,7 +67,7 @@ Freeze the environment at the end of the coding session, in case new dependencie
 pip freeze > requirements.txt
 ```
 
-A requirements.txt file is a common convention in Python projects used to specify the dependencies required for the project to run. It contains a list of Python packages along with their version numbers. This file is used by package management tools (pip) to install the necessary dependencies for the project.
+A requirements.txt file is a common convention in Python projects used to specify the dependencies required for the project to run. It contains a list of Python packages along with their version numbers. This file is used by package management tools (`pip`) to install the necessary dependencies for the project.
 
 
 ```sh
