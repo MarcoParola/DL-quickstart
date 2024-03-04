@@ -59,7 +59,7 @@ project_root/
 
 ```
 
-- The `train.py` and `test.py` files are the main scripts for train and test DL models (indipentely from the actual models).
+- The `train.py` and `test.py` files are the main scripts for train and test DL models (indipendentely from the actual models).
 
 - The `data/` folder contains all your data files.
 

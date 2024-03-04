@@ -71,5 +71,5 @@ git push origin <branch-name>
   ```sh
   git push origin --delete <branch-name>
   ```
-## Official giude:
+## Official guide:
 [https://git-scm.com/docs](https://git-scm.com/docs)
