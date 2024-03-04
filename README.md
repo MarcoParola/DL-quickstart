@@ -18,4 +18,4 @@ Welcome to the Deep Learning quick start guide! This document is created by form
 We encourage contributions to enhance this guide. If you come across valuable resources or have additional tips, please feel free to contribute by submitting a pull request.
 
 ## Contributors
-[Federico  Minniti](https://github.com/federicominniti), [Edoardo Malaspina](https://github.com/edoardoMalaspina), [Irene Cantini](https://github.com/IreneCantini)
+[Federico  Minniti](https://github.com/federicominniti), [Edoardo Malaspina](https://github.com/edoardoMalaspina), [Irene Cantini](https://github.com/IreneCantini), [Martina Marino](https://github.com/martimarino)
