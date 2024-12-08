@@ -6,12 +6,13 @@ Welcome to the Deep Learning quick start guide! This document is created by form
 ## Table of Contents
 
 1. [Introduction](intro/README.md)
-2. [Virtual environment](virtual-env/README.md)
-3. [Version Control](versioning/README.md)
-4. [Deep learning frameworks](frameworks/README.md)
-5. [Configuration](config/README.md)
-6. [Logging](logging/README.md)
-7. [Thesis document writing](thesis-doc/README.md)
+2. [Python bases](python/README.md)
+3. [Virtual environment](virtual-env/README.md)
+4. [Version Control](versioning/README.md)
+5. [Deep learning frameworks](frameworks/README.md)
+6. [Configuration](config/README.md)
+7. [Logging](logging/README.md)
+8. [Thesis document writing](thesis-doc/README.md)
 
 
 
